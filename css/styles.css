@@ -1,6 +1,109 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
 
+:root{
+   --bg-color: white; 
+   --color: black; 
+}
+
 *{
     font-family: 'Ubuntu', sans-serif;
     box-sizing: border-box;
+    background-color: var(--bg-color);
+    color: var(--color);
+}
+
+header{
+    position: sticky;
+    top: 0;
+    opacity: 0.95;
+    border-bottom: 1px solid lightgray;
+}
+
+header img{
+    width: 200px;
+    padding: 5px 10px 0;
+}
+
+header nav{
+    float: right;
+    margin-top: 15px;
+    margin-right: 5px;
+}
+
+header nav menu{
+    list-style-type: none;
+}
+
+header nav menu li{
+    float: left;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+header nav menu li:hover{
+    border-radius: 5px;
+    background-color: lightslategray;
+}
+
+main{
+    padding: 10px;
+}
+
+main p{
+    margin-top: 15px;
+    text-align: justify;
+}
+
+main h1{
+    font-size: 2rem;
+    margin-top: 15px;
+}
+
+footer{
+    border-top: 1px solid lightgray;
+    padding: 10px;
+    text-align: center;
+}
+
+.clearfix{
+    clear: both;
+}
+
+@media all and (max-width: 991px){
+
+    header{
+        text-align: center;
+    }
+
+    header nav{
+        float: none;
+        margin: 0 15px 10px;
+    }
+
+    header nav menu li{
+        float: none;
+        text-align: center;
+    }
+
+    main{
+        text-align: center;
+    }
+
+    main p{
+        padding: 0 10px;
+        text-align: center;
+    }
+
+}
+
+@media all and (max-width: 569px){
+
+    html{
+        font-size: 14px;
+    }
+
+    header img{
+        width: 150px;
+    }
+
 }
